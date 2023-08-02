@@ -10,10 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- lato font family -->
+    <!-- lato and dancing font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@400;700;900&display=swap"
+        rel="stylesheet">
 
     <!-- font Awsome link -->
     <script src="https://kit.fontawesome.com/be061c3c82.js" crossorigin="anonymous"></script>
@@ -21,6 +22,9 @@
     <style>
         .font-lato {
             font-family: 'Lato', sans-serif;
+        }
+        .dancing-script{
+            font-family: 'Dancing Script', cursive;
         }
     </style>
 
@@ -33,6 +37,7 @@
                         'basic-color': '#e893cf',
                         'background-color': '#9376e0',
                         clifford: '#da373d',
+                        'card-background': '#e6e9eb',
                     }
                 }
             }
@@ -44,6 +49,7 @@
 <body class="font-lato">
     <!-- header start here -->
     <header>
+        <!-- navbar section starts here -->
         <nav class="bg-background-color lg:py-5">
             <div class="flex flex-col justify-between items-center lg:flex-row w-4/5 m-auto">
                 <div class="flex justify-center items-center mb-8 lg:mb-0">
@@ -51,15 +57,45 @@
                     <h1 class="text-3xl font-semibold">Urban<span class="text-basic-color">Hive</span></h1>
                 </div>
                 <div class="">
-                    <ul class="flex mb-3 w-screen md:w-full md:flex-row lg:w-full lg:mb-0 flex-col justify-center items-center gap-5 lg:flex-row text-white text-2xl">
+                    <ul
+                        class="flex mb-3 w-screen md:w-full md:flex-row lg:w-full lg:mb-0 flex-col justify-center items-center gap-5 lg:flex-row text-white text-2xl">
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Products</a></li>
-                        <button class="w-full bg-basic-color px-5 py-2 text-black font-bold rounded-lg">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                        <button class="w-full bg-basic-color px-5 py-2 text-black font-bold rounded-lg">Login <i
+                                class="fa-solid fa-arrow-right-to-bracket"></i></button>
                     </ul>
                 </div>
             </div>
         </nav>
+        <!-- navbar section ends here -->
+
+        <!-- banner section start here -->
+        <div class=" mt-10 w-4/5 m-auto  bg-card-background p-2 rounded-lg">
+            <div class="flex flex-col justify-between lg:flex-row">
+                
+                <div class="w-full lg:w-1/2 flex justify-center items-center text-center">
+                    <div>
+                        <h1
+                            class="text-5xl font-bold bg-gradient-to-b from-background-color to-basic-color text-transparent bg-clip-text mb-5 ">
+                            Man Bags</h1>
+                        <p class="mb-6 dancing-script text-4xl">New Men's collections</p>
+                        <span><i class="fa-brands text-5xl pr-4 lg:pr-10 text-blue-600 fa-facebook"></i></span>
+                        <span><i class="fa-brands text-5xl pr-4 lg:pr-10 text-blue-300 fa-twitter"></i></span>
+                        <span><i class="fa-brands text-5xl pr-4 lg:pr-10  text-red-600 fa-youtube"></i></span>
+                        <span><i class="fa-brands text-5xl pr-4 lg:pr-10  text-pink-500 fa-instagram"></i></span>
+                        <br>
+                        <div class="mt-10">
+                            <button class="btn capitalize bg-transparent border-2 border-blue-400 rounded-md mr-5">See More</button>
+                            <button class="btn capitalize bg-transparent border-2 border-blue-400 rounded-md">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <img src="resources/banner-image/bag-picture.jpg" class="mt-5 lg:mt-0 w-full lg:w-1/2 rounded-lg shadow-2xl" />
+            </div>
+        </div>
+        <!-- banner section ends here -->
+
     </header>
     <!-- header ends here -->
     <main>
