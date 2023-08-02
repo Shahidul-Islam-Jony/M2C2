@@ -10,6 +10,19 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- lato font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- font Awsome link -->
+    <script src="https://kit.fontawesome.com/be061c3c82.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 
     <!-- For custom color -->
     <script>
@@ -17,6 +30,8 @@
             theme: {
                 extend: {
                     colors: {
+                        'basic-color': '#e893cf',
+                        'background-color': '#9376e0',
                         clifford: '#da373d',
                     }
                 }
@@ -26,7 +41,34 @@
 
 </head>
 
-<body>
+<body class="font-lato">
+    <!-- header start here -->
+    <header>
+        <nav class="bg-background-color lg:py-5">
+            <div class="flex flex-col justify-between items-center lg:flex-row w-4/5 m-auto">
+                <div class="flex justify-center items-center mb-8 lg:mb-0">
+                    <img class="w-20" src="resources/nav-image/urban-hive.png" alt="">
+                    <h1 class="text-3xl font-semibold">Urban<span class="text-basic-color">Hive</span></h1>
+                </div>
+                <div class="">
+                    <ul class="flex mb-3 w-screen md:w-full md:flex-row lg:w-full lg:mb-0 flex-col justify-center items-center gap-5 lg:flex-row text-white text-2xl">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Products</a></li>
+                        <button class="w-full bg-basic-color px-5 py-2 text-black font-bold rounded-lg">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header ends here -->
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 
 </body>
 
